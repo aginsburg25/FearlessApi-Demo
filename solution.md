@@ -1,6 +1,6 @@
 #Fearless API Take Home Test
 ###Background
-This API consists of different operations to add, delete, and search the Fearlerss-inventory Database
+This API consists of different operations to add, delete, and search the Fearless-inventory Database
 
 ###Rest Endpoints
 `GET /items/getCurrentItems` will return all current Items in DB <br />

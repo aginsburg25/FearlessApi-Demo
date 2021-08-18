@@ -30,7 +30,7 @@ docker-compose up <br />
 - For real-world use would add authentication for accessing endpoints
 
 ### Tech Stack Used
-Language: Java 11
-Framework: Spring Boot
+Language: Java 11 <br />
+Framework: Spring Boot <br />
 Database: MySQL
 

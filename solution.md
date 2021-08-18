@@ -29,3 +29,8 @@ docker-compose up <br />
 - Add front end for easier use to visualize DB and customer input instead of postman http requests
 - For real-world use would add authentication for accessing endpoints
 
+### Tech Stack Used
+Language: Java 11
+Framework: Spring Boot
+Database: MySQL
+

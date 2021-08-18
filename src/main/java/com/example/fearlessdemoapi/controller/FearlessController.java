@@ -23,7 +23,8 @@ public class FearlessController {
 
     /**
      * This method will return a list of all
-     * current items in the inventory DB
+     * current items in the inventory DB.
+     * If the DB is empty will return No Content
      * @return ResponseEntity
      */
     @GetMapping("/getCurrentItems")
@@ -31,6 +32,9 @@ public class FearlessController {
         List<Item> currentItems = new ArrayList<>();
         try {
              currentItems = (List<Item>) fearlessInventoryService.getCurrentItems();
+             if(currentItems.isEmpty()){
+                 return new ResponseEntity<>("Inventory DB is currently empty",HttpStatus.NO_CONTENT);
+             }
         }catch (Exception e){
             log.error("Error retrieving all items from inventory with error: {}",e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
